@@ -8,11 +8,29 @@ body{
 
 }
 
-figure.foto-legenda{
-	border: 8px solid red;
-	box-shadow: 4px 4px 7px ;
+figure.foto-legenda{				/*coloca borda com sombremento*/
+	border: 8px solid red;			
+	box-shadow: 1px 1px 4px black;
+	position: relative;
 }
-figure.foto-legenda img{
+	figure.foto-legenda img{			/*regula tamanho da foto*/
+		width: 100%;
+		height: 100%;
+	}
+
+	figure.foto-legenda figcaption{
+	position: absolute;
+	top: 0px; 
+	background-color: rgba(0,0,0,0.4);
+	color: white; 
 	width: 100%;
 	height: 100%;
-}
+	padding: 10px; /*afasta da borda*/
+	opacity: 0;
+	transition: opacity 0.5s;
+
+	}
+
+	figure.foto-legenda:hover figcaption{
+		opacity: 1; 
+	}
