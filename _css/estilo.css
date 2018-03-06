@@ -4,16 +4,29 @@ p{
 	text-indent: 50px;
 }
 body{
-
+	background-color: #dddddd;
 
 }
+	
+div#interface{
+	width: 1000px;
+	background-color: white;
+	margin: -20px auto 0px auto;  /*o auto serve para calcular automaticamente as distancias*/
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+	padding:10px;
+}
+img#icone{
+	position: absolute;
+	top: 100px;
+	left: 900px;
+}
 
-figure.foto-legenda{				/*coloca borda com sombremento*/
-	border: 8px solid red;			
+figure.foto-legenda{						/*coloca borda com sombremento*/
+	border: 8px solid red;				
 	box-shadow: 1px 1px 4px black;
 	position: relative;
 }
-	figure.foto-legenda img{			/*regula tamanho da foto*/
+	figure.foto-legenda img{				/*regula tamanho da foto*/
 		width: 100%;
 		height: 100%;
 	}
@@ -25,12 +38,51 @@ figure.foto-legenda{				/*coloca borda com sombremento*/
 	color: white; 
 	width: 100%;
 	height: 100%;
-	padding: 10px; /*afasta da borda*/
+	padding: 10px; 							/*afasta da borda*/
 	opacity: 0;
 	transition: opacity 0.5s;
-
+	box-sizing: border-box;
 	}
 
 	figure.foto-legenda:hover figcaption{
 		opacity: 1; 
+	}
+	nav#menu{
+		display: block; /*um bloco pode flutuar pela tela*/
+
+		left: 100px;
+	}
+	
+	nav#menu h1{
+		display: none;
+	}
+
+	nav#menu ul{
+		list-style: none;
+		text-transform: uppercase; /*serve pra deixar maiusculo*/
+		position: absolute;
+		top: -20px;
+		left: 500px;
+	}
+
+	nav#menu li{
+		display: inline-block;
+		background-color: #dddddd;
+		padding: 10px;
+		margin: 2px;
+		transition: background-color 0.5s;
+	}
+
+	nav#menu li:hover{
+		background-color: gray;
+	}
+
+	nav#menu a{
+		color: black;
+		text-decoration: none;
+	}
+
+	nav#menu a:hover{
+		color: white;
+		transition: 0.5s;
 	}
