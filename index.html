@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8" lang="pt-br"/> 				<!--charset="utf-8" configura acentos/lang="pt-br"avisa que o site esta em portugues BR-->
 	<link rel="stylesheet" type="text/css" href="_css/estilo.css">
+	<script type="text/javascript" src="_javascript/funcoes.js"></script>
 	<title></title>
 </head>
 <body>
@@ -18,10 +19,10 @@
 					<h1>Menu Principal</h1>
 					<ul type = "circle">				<!--coloca topicos estrelas etc..-->
 						<li><a href="index.html">Home</a></li>
-						<li><a href="specs.html">Especificações</a></li>
-						<li><a href="fotos.html">Fotos</a></li>
-						<li><a href="multimidia.html">Multimídia</a></li>
-						<li><a href="fale-conosco.html">Fale conosco</a></li>
+						<li id="especificacoes" onmouseover="troca_imagem('especificacoes')" onmouseout="volta_imagem()"><a href="specs.html">Especificações</a></li>
+						<li id="fotos" onmouseover="troca_imagem('fotos')" onmouseout="volta_imagem()"><a href="fotos.html">Fotos</a></li>
+						<li id="multimidia" onmouseover="troca_imagem('multimidia')" onmouseout="volta_imagem()"><a href="multimidia.html">Multimídia</a></li>
+						<li id="contato" onmouseover="troca_imagem('contato')" onmouseout="volta_imagem()"><a href="fale-conosco.html">Fale conosco</a></li>
 					</ul>
 				</nav>
 		</header>
@@ -83,7 +84,7 @@
 			<P>Além da surpresa do áudio, a tela montada a frente do olho do usuário também chamou atenção. Serão 640 x 360 pixels de resolução que, em proporção, equivaleria a um monitor de 25 polegadas de alta definição colocado a 2,5 metros de distância do espectador.</P>
 		</aside>
 		<footer id="rodape">
-			Copyright 2016 - by Lucas Mucida
+			Copyright 2016 - by Davi Mucida
 			Facebook | Twitter
  		</footer>
  	</div>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Freeza</title>
+	<script type="text/javascript">
+		var n=2;
+		function transforma(){
+			document.getElementById("freeza-1").src= "_imagens/freeza-"+n+".png";
+			n++;
+			if (n==6) {
+				n=1;
+			}
+		}
+		
+	</script>
+</head>
+<body>
+	<h1>Freeza transformando</h1>
+	<img id="freeza-1" src="_imagens/freeza-1.png" onclick="transforma()">
+
+	
+
+</body>
+</html>
